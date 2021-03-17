@@ -799,12 +799,12 @@
         font-size: 27px;
         position: relative;
         bottom:2px;
-        left: -70px;
+        left: -30px;
         top:-10px;
         font-weight: 700;
     }
      .title::before{
-        width:138px;
+        width:145px;
         height: 3px;
         background: crimson;
         position: absolute;
@@ -814,10 +814,11 @@
     }
      .title::after{
         content: "get in touch";
-        position: absolute;
-        right: 65px;
-        top: 110px;
+        position: realtive;
+        right: 117px;
+        top: 17px;
         font-size: 12px;
+        font-weight: 600;
 
     }
     .contact{
@@ -858,6 +859,22 @@
     .end b,.end h4{
         font-size: 13px;
     }
+}
+@media(min-width:360px) and (max-width:386px){
+    .title{
+        left: -70px;
+        top:-10px;
+        font-weight: 700;
+    }
+    .title::after{
+        content: "get in touch";
+        position: absolute;
+        right: 69px;
+        top: 110px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
 }
 .social-handle {
     height: 50vh;
