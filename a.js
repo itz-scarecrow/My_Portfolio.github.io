@@ -28,8 +28,8 @@ $('.skill-per').each(function () {
 });
 var typed= new Typed(".typing",{
   strings: ["Front-End Developer.","Aspiring Full-Stack Developer.","Coder.","Sports Lover."],
-  typespeed: 10,
-  backspeed: 10,
+  typeSpeed: 30,
+  backSpeed: 20,
   loop: true
 });
 setTimeout(function(){
