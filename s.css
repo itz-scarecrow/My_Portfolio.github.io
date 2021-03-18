@@ -706,7 +706,7 @@
     padding-left:30px;
     padding-right: 30px;
     border-radius: 40px;
-    box-shadow: 10px 10px 0px 2px lightgrey;
+    box-shadow: 6px 6px 2px 2px lightgrey;
     
 }
 .left .icons .row .info .head{
@@ -789,7 +789,7 @@
     padding-left:30px;
     padding-right: 30px;
     border-radius: 40px;
-    box-shadow: 10px 10px 0px 2px lightgrey;
+    box-shadow: 6px 6px 2px 2px lightgrey;
     margin-right: 16px;
     margin-left: 40px;
 }
