@@ -259,8 +259,8 @@
     border-radius: 13px;
     width:220px;
     height:220px;
-    clip-path: circle(50% at 50% 50%);
     position: relative;
+    border-radius: 50%;
     top: 30px;
 }
 .heading{
@@ -303,7 +303,6 @@
     justify-content:space-between;
     height: 200px;
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 56px;
     color: rgb(12, 85, 63);
 
@@ -314,8 +313,8 @@
     margin-left: 30px;
     margin-right: 30px;
     text-align: justify;
-    font-family:'Baloo Chettan 2', monospace;
-    font-size: 19px;
+    font-family: "Baloo Chettan 2";
+    font-size: 20px;
     font-weight:100;
     z-index: 100;
 }
@@ -330,9 +329,9 @@
     padding-left: 30px;
     padding-right: 30px;
     background-color: antiquewhite;
-    clip-path: circle(50% at 50% 50%);
     position: relative;
-    top: 27px;
+    top: 22px;
+    box-shadow: 9px 9px 2px  lemonchiffon;
     
     
 }
@@ -349,27 +348,40 @@
         left: -12px;
         margin-top: 36px;
         margin-bottom: 20px;
+        text-shadow: 1px 1px 1px coral;
     }
     .picture-cont{
         height: 100px;
         display: flex;
         flex-direction: column;
+        background:rgba(215, 240, 124, 0.959);
+        position: relative;
+        height: 20vh;
     }
     .picture-cont .cont{
         word-spacing: 4px;
         font-size: 14px;
-        margin: 30px 41px;
+        padding: 30px 41px;
         position: relative;
-        top: -27px;
+        top: 0px;
+        margin: 0px;
+        background-color:rgba(215, 240, 124, 0.959);
 
+    }
+    .jpg{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        top:4px;
+        left: 27px;
     }
   
     .picture-cont .pic{
         display: block;
-        position: relative;
-        left: -32px;
         padding-left: 21px;
-        top: -21px;
+        width: 240px;
+        height: 240px;
+
     }
     .heading::before{
         content: "";
@@ -385,7 +397,6 @@
         position: relative;
         top: 15px;
         text-align: center;
-        background: white;
         font-size: 12px;
         right: 89px;
         padding: 0px 3px;
@@ -519,21 +530,23 @@
 .skill-per::before{
     position: absolute;
     content:attr(per);
-    background-color: rgb(189, 179, 245);
-    color: black;
+    background-color: coral;
+    color: lavenderblush;
     padding:2px 8px;
     font-size: 12px;
-    top: -27px;
+    top: -26px;
     right: -13px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 14px;
+    z-index: 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .skill-per::after{
     position: absolute;
     content:' ';
     width: 9px;
     height: 9px;
-    background-color: rgb(189, 179, 245);
+    background-color: coral;
     top: -13px;
     right:0%;
     transform: rotate(45deg);
@@ -542,6 +555,7 @@
     color: brown;
     font-weight: 900;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px plum;
 }
 @media(min-width:360px) and (max-width:800px){
     .contain{
@@ -557,7 +571,7 @@
     }
     .skill{
         position: relative;
-        top: 440px;
+        top: 380px;
     }
     .inner{
         padding-top:6px;
@@ -623,7 +637,7 @@
         position: relative;
         top: -7px;
         text-align: center;
-        background: white;
+        text-shadow: 1px 1px 1px coral;
         font-size: 12px;
         right: -1px;
         font-weight: bold;
@@ -825,6 +839,7 @@
         left: -30px;
         top:-10px;
         font-weight: 700;
+        text-shadow: 1px 1px 1px coral;
     }
      .title::before{
         width:145px;
@@ -838,16 +853,17 @@
      .title::after{
         content: "get in touch";
         position: realtive;
-        right: 140px;
-        top: 17px;
+        right: 115px;
+        top: 23px;
         font-size: 12px;
         font-weight: 600;
         text-align: center;
 
+
     }
     .contact{
         position: relative;
-        top: 340px;
+        top: 260px;
         margin-top: 100px;
 
     }
@@ -874,14 +890,20 @@
     }
     .social-handle{
         margin-bottom: 60px;
-        margin-top:300px;
+        margin-top:358px;
     
+    }
+    .social-handle a{
+        z-index: 5;
     }
      .end{
         display: block;
     }
     .end b,.end h4{
         font-size: 13px;
+    }
+    .whole{
+        background:rgba(215, 240, 124, 0.959) ;
     }
 }
 @media(min-width:360px) and (max-width:386px){
@@ -891,18 +913,16 @@
         font-weight: 700;
     }
     .title::after{
-        content: "get in touch";
         position: absolute;
-        right: 61px;
+        right: 71px;
         top: 110px;
         font-size: 12px;
         font-weight: 600;
         text-align: center;
     }
-
 }
 .footer{
-    background: rgba(215, 240, 124, 0.959);;
+    background: rgba(215, 240, 124, 0.959);
 }
 
 .social-handle {
@@ -950,16 +970,16 @@
 color:#4078c0;
 }
 .end{
-    background-color:rgba(32, 236, 219, 0.473);
+    background-color:black;
     padding: 20px;
-    color: rgb(134, 24, 61);
+    color: violet;
     font-size: 20px;
     text-align: center;
 }
     
-}
+
 .end b{
-    color: crimson;
+    color: violet;
 }
 .end span{
     font-size: 23px;
